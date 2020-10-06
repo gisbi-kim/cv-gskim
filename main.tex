@@ -1,0 +1,239 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass{cv} % Use the custom resume.cls style
+% \documentclass[letterpaper, 8pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+\usepackage{natbib}
+\usepackage{bibentry}
+\nobibliography*
+% the below is to make domestic bib items to have bullet instead of [1]
+\makeatletter
+\renewcommand\@biblabel[1]{\textbullet}
+\makeatother
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+\usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+% \newcommand{\resumeSubheading}[4]{
+%   \vspace{-2pt}\item
+%     \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+%       \textbf{#1} & #2 \\
+%       \textit{\small#3} & \textit{\small #4} \\
+%     \end{tabular*}
+%     % \vspace{-7pt}
+% }
+
+\newcommand{\resumeSubheadingFourLines}[8]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+      {\small#5} & \textit{\small #6} \\
+      {\small#7} & \textit{\small #8} \\
+    \end{tabular*}
+    \vspace{-4pt}
+}
+
+\newcommand{\resumeSubheadingThreeLines}[6]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      {\small#3} & {\small #4} \\
+      {\small#5} & {\small #6}
+    \end{tabular*}
+    \vspace{-4pt}
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}
+    \vspace{-4pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}
+    \vspace{-4pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{\href{http://sourabhbajaj.com/}{ }} & Email : \href{mailto:paulgkim@kaist.ac.kr}{paulgkim@kaist.ac.kr} \\
+  {} & \href{http://bit.ly/gk\_profile}{\underline{Personal Website}} \\
+  {} & \href{https://scholar.google.com/citations?user=9mKOLX8AAAAJ&hl=en}{\underline{Google Scholar}} \\
+\end{tabular*}
+
+\vspace{-7mm}
+\begin{center}
+    \textbf{\Huge \scshape Giseop Kim} 
+\end{center}
+\vspace{-1mm}
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheadingFourLines
+      {Korea Advanced Institute of Science and Technology (KAIST)}{Feb. 2019}
+      {M.S. in Civil and Environmental Engineering (CEE)}{ } 
+      {Dissertation: "Isovist-induced Robust LiDAR Localization"}{}
+      {Advised by Dr. Ayoung Kim}{}
+    \resumeSubheading
+      {Korea Advanced Institute of Science and Technology (KAIST)}{Feb. 2017}
+      {B.S. in Civil and Environmental Engineering (CEE)}{ }
+  \resumeSubHeadingListEnd
+
+
+%-----------POSITIONS-----------
+\section{Positions}
+  \resumeSubHeadingListStart
+
+    \resumeSubheadingThreeLines
+      {Graduate Student Research Assistant}{Mar. 2017 -- present}
+      {\href{https://irap.kaist.ac.kr/}{Intelligent Robotic Autonomy and Perception (IRAP) Lab}}{}
+      {Civil and Environmental Engineering Department, Korea Advanced Institute of Science Technology (KAIST)}{Daejeon, South Korea}
+      \vspace{1mm}
+      \resumeItemListStart
+        \resumeItem{Constructed a long-term \underline{\href{https://sites.google.com/view/mulran-pr/home}{LiDAR+radar dataset}} over multiple urban environments for a year.}
+        \resumeItem{Developed \underline{\href{https://github.com/irapkaist/scancontext}{range sensor-based place recognition and long-term localization}} methods.}
+        \resumeItem{Developed \underline{\href{https://github.com/irapkaist/SC-LeGO-LOAM}{a robust LiDAR SLAM system}} for complex urban sites using ROS and C++.}
+      \resumeItemListEnd
+      
+\vspace{2mm}
+%-----------Field of Interest-----------
+\section{Field of Interest}
+Simultaneous localization and mapping (SLAM), 3D reconstruction, Navigation, Autonomous vehicles, Mobile robotics, Deep learning for 3D data, Robotic perception, Spatial AI
+
+%-----------Publications-----------
+\section{Publications}
+
+\begin{pubSubsectionNum}{International Journal}
+  \item \bibentry{gkim-2019-ral}
+  \item \bibentry{gkim-2019-ceus}
+\end{pubSubsectionNum}
+
+\vspace{-2mm}
+\begin{pubSubsectionNum}{International Conference Proceedings}
+  \item \bibentry{gskim-2020-iros}
+  \item \bibentry{gskim-2020-icra}
+  \item \bibentry{ycho-2020-icra}
+  \item \bibentry{gkim-2018-iros}
+  \item \bibentry{gkim-2018-icraws} % best paper
+\end{pubSubsectionNum}
+
+\vspace{-2mm}
+\begin{pubSubsectionNum}{Dissertations}
+  \item \bibentry{gkim-msthesis}
+\end{pubSubsectionNum}
+
+\vspace{-3mm}
+
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.02in, label={}]
+    \small{\item{
+     \textbf{Languages}{: C/C++, Python, Matlab} \\
+     \textbf{Tools and Libraries}{: ROS, GTSAM, Ceres, etc. } \\
+    }}
+ \end{itemize}
+
+
+%-------------------------------------------
+
+\bibliographystyle{plain}
+\nobibliography{src/ref}
+
+% \vspace{0.1in}
+\hfill Revised \today
+
+\end{document}
