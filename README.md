@@ -1,3 +1,7 @@
 # cv-gskim
-- 1 page cv
-- Most is adapted from my advisor (https://github.com/ayoungk/cv-akim)
+
+## More recent news
+- are found here https://bit.ly/giseopkim
+
+## Ack.
+Most parts were adapted from my advisor (https://github.com/ayoungk/cv-akim)
